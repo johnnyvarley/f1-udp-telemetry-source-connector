@@ -1,0 +1,23 @@
+{
+  "namespace": "ai.tecton.telemetry.avro",
+  "type": "record",
+  "name": "CarTelemetryData",
+  "fields": [
+    {"name": "speed", "type": "int"},
+    {"name": "throttle", "type": "float"},
+    {"name": "steer", "type": "float"},
+    {"name": "brake", "type": "float"},
+    {"name": "clutch", "type": "int"},
+    {"name": "gear", "type": "int"},
+    {"name": "engineRPM", "type": "int"},
+    {"name": "drs", "type": "int"},
+    {"name": "revLightsPercent", "type": "int"},
+    {"name": "revLightsBitValue", "type": "int"},
+    {"name": "brakesTemperature", "type": {"type": "array", "items": "int"}},
+    {"name": "tyresSurfaceTemperature", "type": {"type": "array", "items": "int"}},
+    {"name": "tyresInnerTemperature", "type": {"type": "array", "items": "int"}},
+    {"name": "engineTemperature", "type": "int"},
+    {"name": "tyresPressure", "type": {"type": "array", "items": "float"}},
+    {"name": "surfaceType", "type": {"type": "array", "items": "int"}}
+  ]
+}
